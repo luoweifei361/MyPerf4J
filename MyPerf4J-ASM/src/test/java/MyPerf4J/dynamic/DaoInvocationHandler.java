@@ -10,6 +10,7 @@ public class DaoInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) {
+        // throw new RuntimeException("....................");
         return new Object();
     }
 }

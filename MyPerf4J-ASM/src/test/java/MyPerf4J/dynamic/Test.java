@@ -16,7 +16,7 @@ public class Test {
 
     public static void main(String[] args) throws Throwable {
         rewriteClass();
-//        runNewHandler();
+        runNewHandler();
     }
 
     private static void rewriteClass() throws IOException {
@@ -30,7 +30,8 @@ public class Test {
     }
 
     private static void rewriteClass(byte[] toByte) throws IOException {
-        File tofile = new File("/Users/linshunkang/WorkSpace/personal/MyPerf4J/MyPerf4J-ASM/target/test-classes/MyPerf4J/dynamic/DaoInvocationHandler.class");
+        // File tofile = new File("/Users/linshunkang/WorkSpace/personal/MyPerf4J/MyPerf4J-ASM/target/test-classes/MyPerf4J/dynamic/DaoInvocationHandler.class");
+        File tofile = new File("/Users/lufei/work/MyPerf4J/MyPerf4J-ASM/target/test-classes/MyPerf4J/dynamic/DaoInvocationHandler.class");
         FileOutputStream fout = new FileOutputStream(tofile);
         fout.write(toByte);
         fout.close();

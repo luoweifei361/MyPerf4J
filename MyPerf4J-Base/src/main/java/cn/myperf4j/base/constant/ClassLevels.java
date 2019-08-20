@@ -15,7 +15,7 @@ public interface ClassLevels {
 
     String API = "Api";
 
-    String SERVICE = "Service";
+    String SERVICE = "DubboService";
 
     String CACHE = "Cache";
 

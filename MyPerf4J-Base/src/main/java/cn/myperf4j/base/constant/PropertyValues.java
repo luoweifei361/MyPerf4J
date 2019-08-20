@@ -29,7 +29,7 @@ public interface PropertyValues {
 
     String LOG_ROLLING_TIME_DAILY = "DAILY";
 
-    String DEFAULT_METRICS_FILE = "/data/logs/MyPerf4J/metrics.log";
+    String DEFAULT_METRICS_FILE = "/tmp/logs/monitor/MyPerf4J/metrics.log";
 
     String NULL_FILE = "NULL";
 

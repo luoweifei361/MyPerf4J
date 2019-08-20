@@ -4,7 +4,6 @@ import cn.myperf4j.base.MethodTag;
 import cn.myperf4j.base.metric.MethodMetrics;
 import cn.myperf4j.core.MethodMetricsCalculator;
 import cn.myperf4j.core.MethodTagMaintainer;
-import cn.myperf4j.core.recorder.AccurateRecorder;
 import cn.myperf4j.core.recorder.Recorder;
 import cn.myperf4j.core.recorder.Recorders;
 import cn.myperf4j.core.recorder.RoughRecorder;
@@ -33,7 +32,6 @@ public class MethodMetricsBenchmark {
         recorders.setStopTime(System.currentTimeMillis());
 
         MethodTag methodTag = methodTagMaintainer.getMethodTag(methodId1);
-
         long tmp = 0L;
         start = System.nanoTime();
         for (int i = 0; i < 1000000; ++i) {
